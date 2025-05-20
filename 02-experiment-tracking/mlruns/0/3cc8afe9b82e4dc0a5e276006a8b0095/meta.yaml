@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/mlops-zoomcamp-homework/02-experiment-tracking/mlruns/0/3cc8afe9b82e4dc0a5e276006a8b0095/artifacts
+end_time: 1747384097669
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3cc8afe9b82e4dc0a5e276006a8b0095
+run_name: selective-cub-741
+run_uuid: 3cc8afe9b82e4dc0a5e276006a8b0095
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747384084333
+status: 4
+tags: []
+user_id: codespace

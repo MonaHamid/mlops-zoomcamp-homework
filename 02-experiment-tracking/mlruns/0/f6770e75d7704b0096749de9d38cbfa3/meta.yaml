@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/mlops-zoomcamp-homework/02-experiment-tracking/mlruns/0/f6770e75d7704b0096749de9d38cbfa3/artifacts
+end_time: 1747383928497
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f6770e75d7704b0096749de9d38cbfa3
+run_name: placid-cow-517
+run_uuid: f6770e75d7704b0096749de9d38cbfa3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747383906689
+status: 4
+tags: []
+user_id: codespace
