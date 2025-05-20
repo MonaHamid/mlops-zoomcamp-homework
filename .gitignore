@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environments
+.venv/
+.venvsource/
+env/
+venv/
+
+# MLflow Artifacts
+mlruns/
+artifacts/
+mlflow.db
+
+# Data
+*.parquet
+output/
+data/
+
+# System files
+.DS_Store
