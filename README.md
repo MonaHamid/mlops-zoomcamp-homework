@@ -1,45 +1,61 @@
-# mlops-zoomcamp-homework
+✨ MLOps Zoomcamp Homework – Week 1 & 2 Recap
+🚀 Finished Week 1 & Week 2 of the MLOps Zoomcamp — and here’s what I’ve learned and built so far:
 
-inished Week 1 of the MLOps Zoomcamp!
-
-Here’s a quick recap of what I learned and built so far:
-
+📦 Week 1: Project Structure + Linear Regression on NYC Yellow Taxi Data
 🔧 Setup & Tools
+Got hands-on with GitHub Codespaces — like VS Code but in the cloud 💻☁️
 
-Tried out GitHub Codespaces (it felt like VS Code in the cloud – pretty cool once I figured it out 😅)
+Learned how to structure a proper ML project with reusable scripts instead of tangled notebooks
 
-Learned how to structure a proper ML project — folders, scripts, data… not just a bunch of notebooks anymore!
+Installed dependencies, created .venv, and used make commands for automation
 
-🛻 NYC Taxi Dataset (Yellow Cabs)
+🛻 Dataset: NYC Yellow Cab Trips (Jan–Feb 2023)
+Downloaded January & February 2023 Parquet trip data
 
-Downloaded January & February 2023 trip data
+Conducted basic EDA and noticed some extreme trip durations ⏱️
 
-Did basic EDA and noticed some long-duration outliers 🧐
-
-Filtered the data to keep trips between 1 and 60 mins
+Filtered the data to include only reasonable trips (1 to 60 minutes)
 
 🧠 Feature Engineering
+Computed duration from timestamps and converted to minutes
 
-Computed trip duration in minutes
+Applied one-hot encoding to PULocationID and DOLocationID
 
-One-hot encoded pickup and dropoff locations
-
-Turned the data into a dictionary-based feature matrix
+Used DictVectorizer to transform categorical features
 
 📈 Modeling
-
 Trained a baseline Linear Regression model
 
-Got an RMSE of 7.64 on train, and 7.81 on validation
+Achieved:
 
-Learned that even basic models can perform decently if your features are clean
+🟢 Train RMSE: ~7.64
 
-💡 What clicked for me
+🔵 Validation RMSE: ~7.81
 
-The way you structure your project makes it way easier to debug and scale later
+Logged model performance and serialized the vectorizer + model
 
-Outliers really mess with your model, even in a simple regression
+⚙️ Week 2: MLflow Experiment Tracking + Hyperparameter Tuning
+🧪 MLflow Autologging
+Integrated MLflow autologging with train.py
 
-One-hot encoding + DictVectorizer = magic when working with categorical IDs
+Tracked parameters, metrics, artifacts, and model structure all from code!
 
-📌 Next up: model packaging, experiment tracking, and deployment — can’t wait to break things and learn more 🔥
+🔍 Hyperparameter Optimization
+Tuned RandomForestRegressor with Hyperopt
+
+Defined a search_space for depth, n_estimators, etc.
+
+Logged top n runs and evaluated them
+
+🏁 Model Registry
+Promoted the best model to the MLflow Model Registry
+
+Validated the model on March 2023 test data — best test RMSE: 5.59
+
+Registered model: nyc-taxi-rf-model
+
+💡 Key Takeaways
+✅ Structure matters — reusable code and clear folders saved tons of time
+✅ Outliers skew everything — especially for linear models
+✅ MLflow autologging is powerful — no more tracking metrics manually
+✅ Experiment tracking + registry = MLOps foundation
