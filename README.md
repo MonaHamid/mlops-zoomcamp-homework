@@ -1,5 +1,4 @@
 🧠 MLOps Zoomcamp 2025 – Fareeda Hamid
-
 Welcome to my personal repository for the MLOps Zoomcamp 2025, a free and intensive 9-week course by DataTalks.Club that focuses on building scalable, production-grade machine learning systems.
 
 📅 2025 Cohort
@@ -9,8 +8,7 @@ Welcome to my personal repository for the MLOps Zoomcamp 2025, a free and intens
 📘 Course Overview
 This course explores the complete ML lifecycle — from model training and experiment tracking to deployment, orchestration, and monitoring in production environments. Through hands-on projects, we use best-in-class tools to simulate real-world MLOps workflows and challenges.
 
-You'll gain practical experience with tools like:
-
+You’ll gain practical experience with tools like:
 MLflow for experiment tracking
 
 Prefect & Mage for orchestration
@@ -23,10 +21,15 @@ Terraform & GitHub Actions for infrastructure & CI/CD
 
 🧾 Prerequisites
 Before starting this course, learners are expected to have:
+
 ✅ Solid Python skills
+
 ✅ Understanding of Docker
+
 ✅ Familiarity with Bash / CLI
+
 ✅ Basic ML knowledge (e.g., completed ML Zoomcamp)
+
 ✅ 1+ year programming experience
 
 📚 Weekly Modules
@@ -55,7 +58,10 @@ Infrastructure as Code (IaC): Terraform
 Logging/Storage: MongoDB
 
 👩‍💻 About Me
-Hi, I'm Fareeda Hamid — a Data Scientist, AI enthusiast and a Staff Product Engineer in the fortune 500 company transitioning into ML Engineering. With a strong foundation in data-driven development, I'm passionate about automating and optimizing ML workflows. This repository documents my learning journey through the MLOps Zoomcamp as I gain the skills to build real-world, production-ready ML pipelines.
+Hi, I'm Fareeda Hamid — a Data Scientist, AI enthusiast, and Staff Product Engineer at a Fortune 500 company, currently transitioning into ML Engineering. With a strong foundation in data-driven development, I'm passionate about automating and optimizing ML workflows.
+This repository documents my learning journey through the MLOps Zoomcamp as I build skills to deliver real-world, production-ready ML pipelines.
 
 🔗 Connect With Me
 📧 fareedahab@gmail.com
+
+
