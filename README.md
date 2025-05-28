@@ -1,4 +1,5 @@
 🧠 MLOps Zoomcamp 2025 – Fareeda Hamid
+
 Welcome to my personal repository for the MLOps Zoomcamp 2025, a free and intensive 9-week course by DataTalks.Club that focuses on building scalable, production-grade machine learning systems.
 
 📅 2025 Cohort
