@@ -1,4 +1,5 @@
 🧠 MLOps Zoomcamp 2025 – Fareeda Hamid
+
 Welcome to my personal repository for the MLOps Zoomcamp 2025, a free and intensive 9-week course by DataTalks.Club that focuses on building scalable, production-grade machine learning systems.
 
 📅 2025 Cohort
@@ -10,27 +11,13 @@ This course explores the complete ML lifecycle — from model training and exper
 
 You’ll gain practical experience with tools like:
 MLflow for experiment tracking
-
 Prefect & Mage for orchestration
-
 Docker & AWS Lambda for deployment
-
 Prometheus, Grafana, & Evidently for monitoring
-
 Terraform & GitHub Actions for infrastructure & CI/CD
 
 🧾 Prerequisites
-Before starting this course, learners are expected to have:
 
-✅ Solid Python skills
-
-✅ Understanding of Docker
-
-✅ Familiarity with Bash / CLI
-
-✅ Basic ML knowledge (e.g., completed ML Zoomcamp)
-
-✅ 1+ year programming experience
 
 📚 Weekly Modules
 Week	Module	Topics
@@ -44,17 +31,11 @@ Week	Module	Topics
 
 🛠️ Tools & Technologies
 Experiment Tracking: MLflow
-
 Workflow Orchestration: Prefect, Mage
-
 Deployment: Docker, Flask, AWS Lambda
-
 Monitoring: Prometheus, Grafana, Evidently
-
-CI/CD: GitHub Actions
-
+CI/CD GitHub Actions
 Infrastructure as Code (IaC): Terraform
-
 Logging/Storage: MongoDB
 
 👩‍💻 About Me
