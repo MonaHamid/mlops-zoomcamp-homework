@@ -1,61 +1,60 @@
-✨ MLOps Zoomcamp Homework – Week 1 & 2 Recap
-🚀 Finished Week 1 & Week 2 of the MLOps Zoomcamp — and here’s what I’ve learned and built so far:
+🧠 MLOps Zoomcamp 2025 – Fareeda Hamid
+Welcome to my personal repository for the MLOps Zoomcamp 2025, a free and intensive 9-week course by DataTalks.Club that focuses on building scalable, production-grade machine learning systems.
 
-📦 Week 1: Project Structure + Linear Regression on NYC Yellow Taxi Data
-🔧 Setup & Tools
-Got hands-on with GitHub Codespaces — like VS Code but in the cloud 💻☁️
+📅 2025 Cohort
+🗓️ Start Date: May 5, 2025
+🎓 Status: Ongoing
 
-Learned how to structure a proper ML project with reusable scripts instead of tangled notebooks
+📘 Course Overview
+This course explores the complete ML lifecycle — from model training and experiment tracking to deployment, orchestration, and monitoring in production environments. Through hands-on projects, we use best-in-class tools to simulate real-world MLOps workflows and challenges.
 
-Installed dependencies, created .venv, and used make commands for automation
+You'll gain practical experience with tools like:
 
-🛻 Dataset: NYC Yellow Cab Trips (Jan–Feb 2023)
-Downloaded January & February 2023 Parquet trip data
+MLflow for experiment tracking
 
-Conducted basic EDA and noticed some extreme trip durations ⏱️
+Prefect & Mage for orchestration
 
-Filtered the data to include only reasonable trips (1 to 60 minutes)
+Docker & AWS Lambda for deployment
 
-🧠 Feature Engineering
-Computed duration from timestamps and converted to minutes
+Prometheus, Grafana, & Evidently for monitoring
 
-Applied one-hot encoding to PULocationID and DOLocationID
+Terraform & GitHub Actions for infrastructure & CI/CD
 
-Used DictVectorizer to transform categorical features
+🧾 Prerequisites
+Before starting this course, learners are expected to have:
+✅ Solid Python skills
+✅ Understanding of Docker
+✅ Familiarity with Bash / CLI
+✅ Basic ML knowledge (e.g., completed ML Zoomcamp)
+✅ 1+ year programming experience
 
-📈 Modeling
-Trained a baseline Linear Regression model
+📚 Weekly Modules
+Week	Module	Topics
+1	Introduction	MLOps maturity model, NY Taxi dataset, project setup
+2	Experiment Tracking	MLflow, model registry, saving & loading models
+3	Orchestration	Workflow orchestration with Prefect and Mage
+4	Model Deployment	Batch & real-time deployment using Flask and AWS Lambda
+5	Model Monitoring	Monitoring with Prometheus, Grafana, Evidently, and Prefect
+6	Best Practices	Testing, linting, CI/CD with GitHub Actions, IaC with Terraform
+7–9	Final Project	Capstone project: end-to-end ML system deployment
 
-Achieved:
+🛠️ Tools & Technologies
+Experiment Tracking: MLflow
 
-🟢 Train RMSE: ~7.64
+Workflow Orchestration: Prefect, Mage
 
-🔵 Validation RMSE: ~7.81
+Deployment: Docker, Flask, AWS Lambda
 
-Logged model performance and serialized the vectorizer + model
+Monitoring: Prometheus, Grafana, Evidently
 
-⚙️ Week 2: MLflow Experiment Tracking + Hyperparameter Tuning
-🧪 MLflow Autologging
-Integrated MLflow autologging with train.py
+CI/CD: GitHub Actions
 
-Tracked parameters, metrics, artifacts, and model structure all from code!
+Infrastructure as Code (IaC): Terraform
 
-🔍 Hyperparameter Optimization
-Tuned RandomForestRegressor with Hyperopt
+Logging/Storage: MongoDB
 
-Defined a search_space for depth, n_estimators, etc.
+👩‍💻 About Me
+Hi, I'm Fareeda Hamid — a Data Scientist, AI enthusiast and a Staff Product Engineer in the fortune 500 company transitioning into ML Engineering. With a strong foundation in data-driven development, I'm passionate about automating and optimizing ML workflows. This repository documents my learning journey through the MLOps Zoomcamp as I gain the skills to build real-world, production-ready ML pipelines.
 
-Logged top n runs and evaluated them
-
-🏁 Model Registry
-Promoted the best model to the MLflow Model Registry
-
-Validated the model on March 2023 test data — best test RMSE: 5.59
-
-Registered model: nyc-taxi-rf-model
-
-💡 Key Takeaways
-✅ Structure matters — reusable code and clear folders saved tons of time
-✅ Outliers skew everything — especially for linear models
-✅ MLflow autologging is powerful — no more tracking metrics manually
-✅ Experiment tracking + registry = MLOps foundation
+🔗 Connect With Me
+📧 fareedahab@gmail.com
