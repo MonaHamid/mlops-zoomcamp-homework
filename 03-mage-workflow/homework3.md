@@ -30,6 +30,8 @@ wc -l mage_homework_03/metadata.yaml
 Task: Create an ingestion block that reads the March 2023 Yellow Taxi Parquet file.
 
  Loaded rows: 3,403,766
+
+
 <img width="539" alt="image" src="https://github.com/user-attachments/assets/b465f109-f4f3-431b-bd4b-3afc18bbfd9a" />
 
 
@@ -40,6 +42,7 @@ Task: Create an ingestion block that reads the March 2023 Yellow Taxi Parquet fi
 Task: Clean and filter the dataset for modeling.
 
  Filtered rows: 3,316,216
+
 
 <img width="551" alt="image" src="https://github.com/user-attachments/assets/1d857b1e-7561-49f8-a141-50397a12e03e" />
 
@@ -52,6 +55,7 @@ Task: Clean and filter the dataset for modeling.
 Task: Train a linear regression model using DictVectorizer.
 
  Model Intercept: 23.848739685890877
+
 <img width="545" alt="image" src="https://github.com/user-attachments/assets/42106a85-95cc-4939-9fd7-7460e6fffeb6" />
 
 
@@ -62,6 +66,8 @@ Task: Train a linear regression model using DictVectorizer.
 Task: Log model and vectorizer to MLflow.
 
  MLmodel Size: 4,542 bytes
+
+
 <img width="927" alt="image" src="https://github.com/user-attachments/assets/aa375ceb-4ac1-4142-9ec6-08bf92c55acb" />
 
 
