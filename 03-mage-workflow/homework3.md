@@ -21,7 +21,8 @@ Task: Create a new Mage project named homework_03.
 
 wc -l mage_homework_03/metadata.yaml
 
-![metadata yml](https://github.com/user-attachments/assets/3e1f483f-04bd-419e-a6ec-6db69045e68e)
+<img width="721" alt="image" src="https://github.com/user-attachments/assets/404f986a-a8c2-40d6-aa4d-67ee99f1222b" />
+
 
 
 
