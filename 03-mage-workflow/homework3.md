@@ -68,7 +68,8 @@ Task: Log model and vectorizer to MLflow.
  MLmodel Size: 4,542 bytes
 
 
-<img width="927" alt="image" src="https://github.com/user-attachments/assets/aa375ceb-4ac1-4142-9ec6-08bf92c55acb" />
+<img width="928" alt="image" src="https://github.com/user-attachments/assets/b1a948ec-0e2d-4704-90c9-d762a2dc7617" />
+
 
 
 
