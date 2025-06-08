@@ -8,7 +8,6 @@ Goal: Launch Mage using Docker Compose.
 
  Mage Version: v0.9.76
 
-mage start <project_name>
 
 <img width="941" alt="image" src="https://github.com/user-attachments/assets/bbf9dddf-10ba-4570-84af-ebff7ecc5f64" />
 
