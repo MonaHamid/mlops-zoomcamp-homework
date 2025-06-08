@@ -1,0 +1,14 @@
+import pandas as pd
+from mage_ai.data_preparation.decorators import data_loader
+from mage_ai.data_preparation.shared.secrets import get_secret_value
+
+@data_loader
+def load_data(*args, **kwargs) -> pd.DataFrame:
+    year = 2023
+    month = 3
+    url = f"https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_{year:04d}-{month:02d}.parquet"
+    df = pd.read_parquet(url)
+    print(f"✅ Loaded data with {len(df):,} rows")
+    return df
+
+

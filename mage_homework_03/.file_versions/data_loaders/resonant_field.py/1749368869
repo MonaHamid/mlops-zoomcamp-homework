@@ -1,0 +1,10 @@
+from mage_ai.data_preparation.decorators import data_loader
+import pandas as pd
+from homework_03.utils.read_data import read  # ✅ this must match your file structure
+
+@data_loader
+def load_data(*args, **kwargs):
+    # Example: read March 2023 yellow taxi data
+    df = read(2023, 3, 4)
+    print(f"✅ Loaded: {df.shape[0]} rows")
+    return df

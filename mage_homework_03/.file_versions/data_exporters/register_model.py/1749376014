@@ -1,0 +1,26 @@
+import mlflow
+import pickle
+
+if 'data_exporter' not in globals():
+    from mage_ai.data_preparation.decorators import data_exporter
+
+@data_exporter
+def export_data(train_model, **kwargs):
+    # Unpack model and vectorizer from upstream block
+    model, dv = train_model
+
+    # Set tracking URI and experiment
+    mlflow.set_tracking_uri("sqlite:///mlflow/mlflow.db")
+    mlflow.set_experiment("homework_3_tracking")
+
+    with mlflow.start_run():
+        # Log the model
+        mlflow.sklearn.log_model(model, artifact_path="lin_reg_model")
+
+        # Save and log the DictVectorizer
+        filename = "dict_vectorizer.pkl"
+        with open(filename, "wb") as f_out:
+            pickle.dump(dv, f_out)
+        mlflow.log_artifact(filename, artifact_path="preprocessor")
+
+    return model

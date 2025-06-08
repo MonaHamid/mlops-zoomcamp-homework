@@ -1,0 +1,21 @@
+if 'data_loader' not in globals():
+    from mage_ai.data_preparation.decorators import data_loader
+
+import pandas as pd
+import requests
+from io import BytesIO
+from pandas import DataFrame
+
+@data_loader
+def load_data_from_api(**kwargs) -> DataFrame:
+    print("📦 Downloading taxi data from March 2023...")
+    url = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-03.parquet"
+
+    response = requests.get(url)
+    if response.status_code != 200:
+        raise Exception(f"❌ Failed: {response.status_code} - {response.text}")
+
+    df = pd.read_parquet(BytesIO(response.content))
+    print(f" Loaded {df.shape[0]} rows")
+    return df
+

@@ -1,0 +1,14 @@
+from homework_03.utils.read_data import read
+from pandas import DataFrame
+from mage_ai.data_preparation.decorators import data_loader
+
+@data_loader
+def ingest_files(*args, **kwargs) -> DataFrame:
+    ano = kwargs.get('ano', 2023)
+    mes_ini = kwargs.get('mes_ini', 3)
+    mes_fin_excluyendo = kwargs.get('mes_fin_excluyendo', 4)
+
+    trip_data = read(ano, mes_ini, mes_fin_excluyendo)
+
+    print(f"✅ rows -> {trip_data.shape[0]}")
+    return trip_data
