@@ -5,7 +5,8 @@ from batch import run
 def load_model():
     import pickle
     with open("model.bin", "rb") as f_in:
-        return pickle.load(f_in)
+        dv, model = pickle.load(f_in)
+    return dv, model
 
 @task
 def read_data(year, month):
@@ -15,9 +16,10 @@ def read_data(year, month):
     return df
 
 @task
-def make_predictions(model, df):
+def make_predictions(dv, model, df):
     features = ["PULocationID", "DOLocationID", "trip_distance"]
-    X = df[features].fillna(0)
+    X_dict = df[features].fillna(0).to_dict(orient="records")
+    X = dv.transform(X_dict)
     return model.predict(X)
 
 @task
@@ -31,8 +33,8 @@ def save_predictions(preds, year, month):
 
 @flow
 def taxi_duration_pipeline(year: int = 2023, month: int = 4):
-    model = load_model()
+    dv, model = load_model()
     df = read_data(year, month)
-    preds = make_predictions(model, df)
+    preds = make_predictions(dv, model, df)
     output_path = save_predictions(preds, year, month)
     print(f"Saved to {output_path}")
