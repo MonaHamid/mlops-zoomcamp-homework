@@ -1,0 +1,13 @@
+# Ignore virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Ignore OS/misc files
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore parquet and data files
+*.parquet
