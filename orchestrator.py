@@ -10,7 +10,7 @@ def load_model():
 @task
 def read_data(year, month):
     import pandas as pd
-    input_file = f"https://nyc-tlc.s3.amazonaws.com/trip+data/yellow_tripdata_{year}-{month:02d}.parquet"
+    input_file = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-04.parquet"
     df = pd.read_parquet(input_file)
     return df
 
