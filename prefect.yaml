@@ -11,5 +11,8 @@ deployments:
 - name: taxi-batch
   flow_name: taxi_duration_pipeline
   entrypoint: orchestrator.py:taxi_duration_pipeline
+  parameters:
+    year: 2023
+    month: 4
   work_pool:
-    name: new  # Make sure this matches your actual Prefect Cloud work pool name
+    name: new
